@@ -1,0 +1,5 @@
+
+ghc --make -Wall test.hs -o gHID
+#ghc --make -Wall -fforce-recomp test.hs -o gHID
+#sudo cp gHID /usr/local/bin
+

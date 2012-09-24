@@ -1,0 +1,7 @@
+09	Button
+
+00	No button pressed
+01	Button 1 (primary/trigger)
+02	Button 2 (secondary)
+03	Button 3 (tertiary)
+04-FFFF	Button %x

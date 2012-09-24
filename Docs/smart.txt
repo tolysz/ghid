@@ -1,0 +1,50 @@
+Smart is a language for modifying descriptors, it is really more 
+simmilar to an assembler than to anything else as it is designed to 
+mirror the standard descriptor using more meaningfull keywords
+and by removing the need to worry about convertion of numbers to the right
+format or worying about the right length for encoding them.
+There is still a need to understand what are you exactlly doing thus it is not a trivial task, 
+however it is much easier then playing with pure descriptor.
+
+Case is not important as is the formatting. Most of these keywords are usually followed by a number.
+
+Numbers can be writen in signed decimal or hexadecimal(prefixed by 0x)
+
+UP - Usage Page
+U - Usage
+As for we need to provide  number for those UP and U we need to lookup their meanings in HID tables from
+usb.org (or .upg from Intel's dt.exe) In upgs folder there are lists with some of possible values. The number in the filename usually 
+corresponds to values for UP and those from inside to U.
+
+ID - report ID
+RS - report size
+RC -report count
+
+I - input
+O - output
+F - feature
+
+
+Lmin - logical minimum
+Lmax - logical maximum
+
+Pmin - physical minimum
+Pmax - physical maximum
+
+Umin - usage minimum
+Umax - usage maximum
+
+Collections:
+A {} - application
+L {} - logical
+P {} - physical
+R {} - report
+NA {} - named array
+UM {} - usage modifier
+US {} - usage switch
+
+comments are ignored 
+ // - line comment
+ -- - line comment
+ /* */ - block comment
+ {- -} - block comment

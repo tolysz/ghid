@@ -1,0 +1,6 @@
+83	VESA Command
+
+00	Undefined%X
+01	Settings
+02	Degauss
+03-FFFF	Reserved%X %x

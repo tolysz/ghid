@@ -1,0 +1,16 @@
+8E	Magnetic Stripe Reading (MSR) Devices
+
+00	Undefined %X %x
+01	MSR Device Read-Only
+02-10	Reserved %X %x
+11	Track 1 Length
+12	Track 2 Length
+13	Track 3 Length
+14	Track JIS Length
+15-1F	Reserved %X %x
+20	Track Data
+21	Track 1 Data
+22	Track 2 Data
+23	Track 3 Data
+24	Track JIS Data
+25-FFFF	Reserved %X %x

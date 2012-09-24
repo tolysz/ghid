@@ -1,0 +1,91 @@
+UP    0x01            //  Generic Desktop
+U     0x04            //  0x04 [Joystick]
+A {                   //  Application (mouse, keyboard)
+   L {                //  Logical (interrelated data)
+      ID    0x01      //  0x01 [1]
+      RS    0x08      //  0x08 [8]
+      RC    0x01      //  0x01 [1]
+      Lmin     0      //   [0]
+      Lmax   255      //  0x00FF [255]
+      I     0x03      //  0x03 Const[0] Var[1] Abs[2] 
+
+      RS    0x01      //  0x01 [1]
+      RC    0x13      //  0x13 [19]
+      Lmin     0      //   [0]
+      Lmax     1      //  0x01 [1]
+      Pmin     0      //   [0]
+      Pmax     1      //  0x01 [1]
+      UP    0x09      //  Button
+      Umin  0x01      //  0x01 [Button 1 (primary/trigger)]
+      Umax  0x13      //  0x13 [Button 13]
+      I     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      RS    0x01      //  0x01 [1]
+      RC    0x0D      //  0x0D [13]
+      UP  0xFF00      //  Vendor Defined Page FF00
+      I     0x03      //  0x03 Const[0] Var[1] Abs[2] 
+
+      Lmin     0      //   [0]
+      Lmax   255      //  0x00FF [255]
+      UP    0x01      //  Generic Desktop
+      U     0x01      //  0x01 [Pointer]
+      P {             //  Physical (group of axes)
+         RS    0x08   //  0x08 [8]
+         RC    0x04   //  0x04 [4]
+         Pmin     0   //   [0]
+         Pmax   255   //  0x00FF [255]
+         U     0x30   //  0x30 [X]
+         U     0x31   //  0x31 [Y]
+         U     0x32   //  0x32 [Z]
+         U     0x35   //  0x35 [Rz]
+         I     0x02   //  0x02 Data[0] Var[1] Abs[2] 
+
+         }            //   [Pointer]
+
+      UP    0x01      //  Generic Desktop
+      RS    0x08      //  0x08 [8]
+      RC    0x27      //  0x27 [39]
+      U     0x01      //  0x01 [Pointer]
+      I     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      U     0x01      //  0x01 [Pointer]
+      O     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      U     0x01      //  0x01 [Pointer]
+      F     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      }               //   [Joystick]
+
+   L {                //  Logical (interrelated data)
+      ID    0x02      //  0x02 [2]
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      U     0x01      //  0x01 [Pointer]
+      F     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      }               //   [Joystick]
+
+   L {                //  Logical (interrelated data)
+      ID    0xEE      //  0xEE [238]
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      U     0x01      //  0x01 [Pointer]
+      F     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      }               //   [Joystick]
+
+   L {                //  Logical (interrelated data)
+      ID    0xEF      //  0xEF [239]
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      U     0x01      //  0x01 [Pointer]
+      F     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      }               //   [Joystick]
+
+   }                  //   [Joystick]
+

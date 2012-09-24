@@ -1,0 +1,154 @@
+UP    0x01            //  Generic Desktop
+U     0x04            //  0x04 [Joystick]
+A {                   //  Application (mouse, keyboard)
+   U     0x04         //  0x04 [Joystick]
+   L {                //  Logical (interrelated data)
+      ID    0x01      //  0x01 [1]
+      RS    0x08      //  0x08 [8]
+      RC    0x01      //  0x01 [1]
+      I               //   
+
+      UP    0x09      //  Button
+      RS    0x01      //  0x01 [1]
+      RC    0x04      //  0x04 [4]
+      Lmin     0      //   [0]
+      Lmax     1      //  0x01 [1]
+      U     0x0C      //  0x0C [Button 0C]
+      U     0x0A      //  0x0A [Button 0A]
+      U     0x09      //  0x09 [Button 09]
+      U     0x0B      //  0x0B [Button 0B]
+      I     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      UP    0x01      //  Generic Desktop
+      U     0x01      //  0x01 [Pointer]
+      L {             //  Physical (group of axes)
+         RS    0x01   //  0x01 [1]
+         Lmin     0   //   [0]
+         Lmax     1   //  0x01 [1]
+         RC    0x04   //  0x04 [4]
+         U     0x90   //  0x90 [D-pad Up]
+         U     0x92   //  0x92 [D-pad Right]
+         U     0x91   //  0x91 [D-pad Down]
+         U     0x93   //  0x93 [D-pad Left]
+         I     0x02   //  0x02 Data[0] Var[1] Abs[2] 
+
+         }            //   [Pointer]
+
+      UP    0x09      //  Button
+      RC    0x09      //  0x09 [9]
+      U     0x08      //  0x08 [Button 08]
+      U     0x07      //  0x07 [Button 07]
+      U     0x06      //  0x06 [Button 06]
+      U     0x05      //  0x05 [Button 05]
+      U     0x04      //  0x04 [Button 04]
+      U     0x02      //  0x02 [Button 2 (secondary)]
+      U     0x01      //  0x01 [Button 1 (primary/trigger)]
+      U     0x03      //  0x03 [Button 3 (tertiary)]
+      U     0x0D      //  0x0D [Button 0D]
+      I     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      RS    0x01      //  0x01 [1]
+      RC    0x0F      //  0x0F [15]
+      I               //   
+
+      Lmin     0      //   [0]
+      Lmax   255      //  0x00FF [255]
+      Pmin  -128      //  0x80 [-128]
+      Pmax   127      //  0x7F [127]
+      UP    0x01      //  Generic Desktop
+      U     0x01      //  0x01 [Pointer]
+      RS    0x08      //  0x08 [8]
+      RC    0x02      //  0x02 [2]
+      P {             //  Physical (group of axes)
+         U     0x30   //  0x30 [X]
+         U     0x31   //  0x31 [Y]
+         I     0x02   //  0x02 Data[0] Var[1] Abs[2] 
+
+         }            //   [Pointer]
+
+      U     0x05      //  0x05 [Game Pad]
+      P {             //  Physical (group of axes)
+         U     0x32   //  0x32 [Z]
+         U     0x33   //  0x33 [Rx]
+         I     0x02   //  0x02 Data[0] Var[1] Abs[2] 
+
+         }            //   [Game Pad]
+
+      RS    0x08      //  0x08 [8]
+      RC    0x04      //  0x04 [4]
+      I               //   
+
+      RS    0x08      //  0x08 [8]
+      RC    0x0C      //  0x0C [12]
+      U     0x46      //  0x46 [Vno]
+      Pmin     0      //   [0]
+      Pmax     0      //   [0]
+      I     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      RS    0x08      //  0x08 [8]
+      RC    0x0F      //  0x0F [15]
+      I               //   
+
+      RS    0x10      //  0x10 [16]
+      RC    0x01      //  0x01 [1]
+      Lmin   384      //  0x0180 [384]
+      Lmax   639      //  0x027F [639]
+      Pmax  -128      //  0x80 [-128]
+      Pmin   127      //  0x7F [127]
+      U     0x33      //  0x33 [Rx]
+      I     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      Pmin  -128      //  0x80 [-128]
+      Pmax   127      //  0x7F [127]
+      U     0x34      //  0x34 [Ry]
+      I     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      RC    0x02      //  0x02 [2]
+      Lmin     0      //   [0]
+      Lmax  1024      //  0x0400 [1024]
+      Pmin  -511      //  0xFE01 [-511]
+      Pmax   512      //  0x0200 [512]
+      U     0x35      //  0x35 [Rz]
+      U     0x36      //  0x36 [Slider]
+      I     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      Lmin     0      //   [0]
+      Lmax   255      //  0x00FF [255]
+      Pmin     0      //   [0]
+      Pmax   255      //  0x00FF [255]
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      O     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      F     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      }               //   [Joystick]
+
+   L {                //  Logical (interrelated data)
+      ID    0x02      //  0x02 [2]
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      F     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      }               //   [Joystick]
+
+   L {                //  Logical (interrelated data)
+      ID    0xEE      //  0xEE [238]
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      F     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      }               //   [Joystick]
+
+   L {                //  Logical (interrelated data)
+      ID    0xEF      //  0xEF [239]
+      RS    0x08      //  0x08 [8]
+      RC    0x30      //  0x30 [48]
+      F     0x02      //  0x02 Data[0] Var[1] Abs[2] 
+
+      }               //   [Joystick]
+
+   }                  //   [Joystick]
+

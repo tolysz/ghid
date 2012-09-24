@@ -1,0 +1,4 @@
+81	Monitor Enumerated Values
+
+00	unassigned%X
+01-FFFF	ENUM %x

@@ -1,0 +1,40 @@
+01	Generic Desktop
+02	Simulation Controls
+03	VR Controls
+04	Sports Controls
+05	Gaming Controls
+06	Generic Device Controls
+07	Keyboard
+08	LEDs
+09	Button
+0A	Ordinals
+0B	Telephony Devices
+0C	Consumer Devices
+0D	Digitizers
+0E	Reserved
+0E	PID Page
+10	Unicode
+11-13	Reserved%X
+14	Auxiliary Display
+15-1F	Reserved%X
+20	Sensor
+21-3F	Reserved%X
+40	Medical Instruments
+41-7F	Reserved%X
+80	Monitor
+81	Monitor Enumerated Values
+82	VESA Virtual Controls
+83	VESA Command
+84	Power Device
+85	Battery System
+86-87	Power Page%X
+88-8B	Reserved%X
+8C	Bar Code Scanner
+8D	Weighing Devices
+8E	Magnetic Stripe Reader (MSR) Devices
+8F	Reserved Point of Sale pages
+90	Camera Control Page
+91	Arcade Page
+92	Gaming Device 
+93-FEFF	Reserved%X
+FF00-FFFF	Vendor Defined Page %X

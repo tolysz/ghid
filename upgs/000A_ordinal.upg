@@ -1,0 +1,4 @@
+0A	Ordinals
+
+00	Reserved%X
+01-FFFF	Instance %x

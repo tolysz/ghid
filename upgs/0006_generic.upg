@@ -1,0 +1,16 @@
+06	Generic Device Controls
+
+00	Unidentified%X %x
+01	Background Controls
+02-1F	Reserved%X %x
+20	Battery Strength
+21	Wireless Channel
+22	Wireless ID
+23	Discover Wireless Control
+24	Security Code Character Entered
+25	Security Code Character Erased
+26	Security Code Cleared
+27	Sequence ID
+28	Sequence ID Reset
+29	RF Signal Strength
+2A-FFFF	Reserved%X %x

@@ -1,0 +1,496 @@
+20	Sensor
+
+00	Undefined
+01	Sensor
+02-0F	Reserved %X %x
+10	Biometric
+11	Biometric: Human Presence
+12	Biometric: Human Proximity
+13	Biometric: Human Touch
+14-1F	Reserved %X %x
+20	Electrical
+21	Electrical: Capacitance
+22	Electrical: Current
+23	Electrical: Power
+24	Electrical: Inductance
+25	Electrical: Resistance
+26	Electrical: Voltage
+27	Electrical: Potentiometer
+28	Electrical: Frequency
+29	Electrical: Period
+2A-2F	Electrical: Reserved %X %x
+30	Environmental 
+31	Environmental: Atmospheric Pressure 
+32	Environmental: Humidity 
+33	Environmental: Temperature 
+34	Environmental: Wind Direction 
+35	Environmental: Wind Speed 
+36-3F	Environmental: Reserved %X %x
+40	Light
+41	Light: Ambient Light
+42	Light: Consumer Infrared
+43-4F	Light: Reserved %X %x
+50	Location
+51	Location: Broadcast
+52	Location: Dead Reckoning
+53	Location: GPS (Global Positioning System)
+54	Location: Lookup
+55	Location: Other
+56	Location: Static
+57	Location: Triangulation
+58-5F	Location: Reserved %X %x
+60	Mechanical
+61	Mechanical: Boolean Switch
+62	Mechanical: Boolean Switch Array
+63	Mechanical: Multivalue Switch
+64	Mechanical: Force
+65	Mechanical: Pressure
+66	Mechanical: Strain
+67	Mechanical: Weight
+68	Mechanical: Haptic Vibrator
+69	Mechanical: Hall Effect Switch
+6A-6F	Mechanical: Reserved %X %x
+70	Motion
+71	Motion: Accelerometer 1D
+72	Motion: Accelerometer 2D
+73	Motion: Accelerometer 3D
+74	Motion: Gyrometer 1D
+75	Motion: Gyrometer 2D
+76	Motion: Gyrometer 3D
+77	Motion: Motion Detector
+78	Motion: Speedometer
+79	Motion: Accelerometer (any number of axes)
+7A	Motion: Gyrometer (any number of axes)
+7B-7F	Motion: Reserved %X %x
+80	Orientation
+81	Orientation: Compass 1D
+82	Orientation: Compass 2D
+83	Orientation: Compass 3D
+84	Orientation: Inclinometer 1D
+85	Orientation: Inclinometer 2D
+86	Orientation: Inclinometer 3D
+87	Orientation: Distance 1D
+88	Orientation: Distance 2D
+89	Orientation: Distance 3D
+8A	Orientation: Device Orientation
+8B	Orientation: Compass (any number of axes)
+8C	Orientation: Inclinometer (any number of axes)
+8D	Orientation: Distance (any number of axes)
+8E-8F	Orientation: Reserved%X %x
+90	Scanner
+91	Scanner: Barcode
+92	Scanner: RFID
+93	Scanner: NFC
+94-9F	Scanner: Reserved %X %x
+A0	Time
+A1	Time: Alarm Timer
+A2	Time: Real Time Clock
+A3-AF	Time: Reserved %X %x
+B0-DF	Reserved
+E0	Other
+E1	Other: Custom
+E2	Other: Generic
+E3	Other: Generic Enumerator
+E4-EF	Other: Reserved%X %x
+F0-FF	Reserved for Vendors/OEMs
+M100-M1FF	Reserved %X %x
+M200	Event
+M201	Event: Sensor State
+M202	Event: Sensor Event
+M203-M2FF	Event: Reserved %X %x
+M300	Property
+M301	Property: Friendly Name
+M302	Property: Persistent Unique ID
+M303	Property: Sensor Status
+M304	Property: Minimum Report Interval (default Unit:milliseconds)
+M305	Property: Sensor Manufacturer
+M306	Property: Sensor Model
+M307	Property: Sensor Serial Number
+M308	Property: Sensor Description
+M309	Property: Sensor Connection Type
+M30A	Property: Sensor Device Path
+M30B	Property: Hardware Revision
+M30C	Property: Firmware Version
+M30D	Property: Release Date
+M30E	Property: Report Interval (default Unit: milliseconds)
+M30F	Property: Change Sensitivity Absolute
+M310	Property: Change Sensitivity Percent of Range
+M311	Property: Change Sensitivity Percent Relative
+M312	Property: Accuracy
+M313	Property: Resolution
+M314	Property: Maximum
+M315	Property: Minimum
+M316	Property: Reporting State
+M317	Property: Sampling Rate (default Unit: milliseconds)
+M318	Property: Response Curve
+M319	Property: Power State
+M31A-M3FF	Property: Reserved %X %x
+M400	Data Field: Location
+M401	Data Field: Location Reserved
+M402	Data Field: Altitude Antenna Sea Level (default Unit:meters)
+M403	Data Field: Differential Reference Station ID
+M404	Data Field: Altitude Ellipsoid Error (default Unit:meters)
+M405	Data Field: Altitude Ellipsoid (default Unit: meters)
+M406	Data Field: Altitude Sea Level Error (default Unit:meters)
+M407	Data Field: Altitude Sea Level (default Unit: meters)
+M408	Data Field: Differential GPS Data Age (default Unit:seconds)
+M409	Data Field: Error Radius (default Unit: meters)
+M40A	Data Field: Fix Quality
+M40B	Data Field: Fix Type
+M40C	Data Field: Geoidal Separation (default Unit:meters)
+M40D	Data Field: GPS Operation Mode
+M40E	Data Field: GPS Selection Mode
+M40F	Data Field: GPS Status
+M410	Data Field: Position Dilution of Precision
+M411	Data Field: Horizontal Dilution of Precision
+M412	Data Field: Vertical Dilution of Precision
+M413	Data Field: Latitude (default Unit: degrees)
+M414	Data Field: Longitude (default Unit: degrees)
+M415	Data Field: True Heading (default Unit: degrees)
+M416	Data Field: Magnetic Heading (default Unit:degrees)
+M417	Data Field: Magnetic Variation (default Unit:degrees)
+M418	Data Field: Speed (default Unit: knots)
+M419	Data Field: Satellites in View
+M41A	Data Field: Satellites in View Azimuth
+M41B	Data Field: Satellites in View Elevation
+M41C	Data Field: Satellites in View IDs
+M41D	Data Field: Satellites in View PRNs
+M41E	Data Field: Satellites in View S/N Ratios
+M41F	Data Field: Satellites Used Count
+M420	Data Field: Satellites Used PRNs
+M421	Data Field: NMEA Sentence
+M422	Data Field: Address Line 1
+M423	Data Field: Address Line 2
+M424	Data Field: City
+M425	Data Field: State or Province
+M426	Data Field: Country or Region (ISO 3166)
+M427	Data Field: Postal Code
+M428-M429	Data Field: Location Reserved%X %x
+M42A	Property: Location
+M42B	Property: Location Desired Accuracy
+M42C-M42F	Property: Location Reserved%X %x
+M430	Data Field: Environmental
+M431	Data Field: Atmospheric Pressure (default Unit: bars)
+M432	Data Field: Reserved
+M433	Data Field: Relative Humidity (percent)
+M434	Data Field: Temperature (default Unit: degrees Celsius)
+M435	Data Field: Wind Direction (default Unit: degrees)
+M436	Data Field: Wind Speed (default Unit: meters/second)
+M437-M43F	Data Field: Environmental Reserved %X %x
+M440	Property: Environmental
+M441	Property: Reference Pressure (default Unit: bars)
+M442-M44F	Property: Environmental Reserved %X %x
+M450	Data Field: Motion
+M451	Data Field: Motion State
+M452	Data Field: Acceleration (default Unit: G’s)
+M453	Data Field: Acceleration Axis X (default Unit: G’s)
+M454	Data Field: Acceleration Axis Y (default Unit: G’s)
+M455	Data Field: Acceleration Axis Z (default Unit: G’s)
+M456	Data Field: Angular Velocity (default Unit: degrees/second)
+M457	Data Field: Angular Velocity about X Axis (default Unit: degrees/second)
+M458	Data Field: Angular Velocity about Y Axis (default Unit: degrees/second)
+M459	Data Field: Angular Velocity about Z Axis (default Unit: degrees/second)
+M45A	Data Field: Angular Position (default Unit: degrees)
+M45B	Data Field: Angular Position about X Axis (default Unit: degrees)
+M45C	Data Field: Angular Position about Y Axis (default Unit: degrees)
+M45D	Data Field: Angular Position about Z Axis (default Unit: degrees)
+M45E	Data Field: Motion Speed (default Unit: meters/second)
+M45F	Data Field: Motion Intensity (percent)
+M460-M46F	Data Field: Motion Reserved %X %x
+M470	Data Field: Orientation
+M471	Data Field: Heading (default Unit: degrees)
+M472	Data Field: Heading X Axis (default Unit: degrees)
+M473	Data Field: Heading Y Axis (default Unit: degrees)
+M474	Data Field: Heading Z Axis (default Unit: degrees)
+M475	Data Field: Heading Compensated Magnetic North (default Unit: degrees)
+M476	Data Field: Heading Compensated True North (default Unit: degrees)
+M477	Data Field: Heading Magnetic North (default Unit: degrees)
+M478	Data Field: Heading True North (default Unit: degrees)
+M479	Data Field: Distance (default Unit: meters)
+M47A	Data Field: Distance X Axis (default Unit: meters)
+M47B	Data Field: Distance Y Axis (default Unit: meters)
+M47C	Data Field: Distance Z Axis (default Unit: meters)
+M47D	Data Field: Distance Out-of-Range
+M47E	Data Field: Tilt (default Unit: degrees)
+M47F	Data Field: Tilt X Axis (default Unit: degrees)
+M480	Data Field: Tilt Y Axis (default Unit: degrees)
+M481	Data Field: Tilt Z Axis (default Unit: degrees)
+M482	Data Field: Rotation Matrix
+M483	Data Field: Quaternion
+M484	Data Field: Magnetic Flux (default Unit: milligauss)
+M485	Data Field: Magnetic Flux X Axis (default Unit: milligauss)
+M486	Data Field: Magnetic Flux Y Axis (default Unit: milligauss)
+M487	Data Field: Magnetic Flux Z Axis (default Unit: milligauss)
+M488-M48F	Data Field: Orientation Reserved %X %x
+M490	Data Field: Mechanical
+M491	Data Field: Boolean Switch State
+M492	Data Field: Boolean Switch Array States
+M493	Data Field: Multivalue Switch Value
+M494	Data Field: Force (default Unit: Newtons)
+M495	Data Field: Absolute Pressure (default Unit: Pascals)
+M496	Data Field: Gauge Pressure (default Unit: Pascals)
+M497	Data Field: Strain (percent)
+M498	Data Field: Weight (default Unit: kilograms)
+M498-M49F	Data Field: Mechanical Reserved %X %x
+M4A0	Property: Mechanical
+M4A1	Property: Vibration State
+M4A2	Property: Forward Vibration Speed (percent)
+M4A3	Property: Backward Vibration Speed (percent)
+M4A4-M4AF	Property: Mechanical Reserved %X %x
+M4B0	Data Field: Biometric
+M4B1	Data Field: Human Presence
+M4B2	Data Field: Human Proximity Range (default Unit: meters)
+M4B3	Data Field: Human Proximity Out of Range
+M4B4	Data Field: Human Touch State
+M4B5-M4CF	Data Field: Biometric Reserved %X %x
+M4D0	Data Field: Light
+M4D1	Data Field: Illuminance (default Unit: Lux)
+M4D2	Data Field: Color Temperature (default Unit: degrees Kelvin)
+M4D3	Data Field: Chromaticity
+M4D4	Data Field: Chromaticity X (default Unit: CIE 1931 x)
+M4D5	Data Field: Chromaticity Y (default Unit: CIE 1931 y)
+M4D6	Data Field: Consumer IR Sentence Receive
+M4D7-M4DF	Data Field: Light Reserved %X %x
+M4F0	Data Field: Scanner
+M4F1	Data Field: RFID Tag 40 Bit
+M4F2	Data Field: NFC Sentence Receive
+M4F3-M4F7	Data Field: Scanner Reserved %X %x
+M4F8	Property: Scanner
+M4F9	Property: NFC Sentence Send
+M4FA-M4FF	Property: Scanner Reserved %X %x
+M500	Data Field: Electrical
+M501	Data Field: Capacitance (default Unit: Farads)
+M502	Data Field: Current (default Unit: Amperes)
+M503	Data Field: Electrical Power (default Unit: Watts)
+M504	Data Field: Inductance (default Unit: Henrys)
+M505	Data Field: Resistance (default Unit: Ohms)
+M506	Data Field: Voltage (default Unit: Volts)
+M507	Data Field: Frequency (default Unit: Hertz)
+M508	Data Field: Period (default Unit: milliseconds)
+M509	Data Field: Percent of Range
+M50A-M51F	Data Field: Electrical Reserved %X %x
+M520	Data Field: Time
+M521	Data Field: Year
+M522	Data Field: Month
+M523	Data Field: Day
+M524	Data Field: Day of Week
+M525	Data Field: Hour
+M526	Data Field: Minute
+M527	Data Field: Second
+M528	Data Field: Millisecond
+M529	Data Field: Timestamp
+M52A	Data Field: Julian Day of Year
+M52A-M52F	Data Field: Time Reserved %X %x
+M540	Data Field: Custom
+M541	Data Field: Custom Usage
+M542	Data Field: Custom Boolean Array
+M543	Data Field: Custom Value
+M544	Data Field: Custom Value 1
+M545	Data Field: Custom Value 2
+M546	Data Field: Custom Value 3
+M547	Data Field: Custom Value 4
+M548	Data Field: Custom Value 5
+M549	Data Field: Custom Value 6
+M54A-M55F	Data Field: Custom Reserved%X %x
+M560	Data Field: Generic
+M561	Data Field: Generic GUID or PROPERTYKEY
+M562	Data Field: Generic Category GUID
+M563	Data Field: Generic Type GUID
+M564	Data Field: Generic Event PROPERTYKEY
+M565	Data Field: Generic Property PROPERTYKEY
+M566	Data Field: Generic Data Field PROPERTYKEY
+M567	Data Field: Generic Event
+M568	Data Field: Generic Property
+M569	Data Field: Generic Data Field
+M56A	Data Field: Enumerator Table Row Index
+M56B	Data Field: Enumerator Table Row Count
+M56C	Data Field: Generic GUID or PROPERTYKEY kind
+M56D	Data Field: Generic GUID
+M56E	Data Field: Generic PROPERTYKEY
+M56F	Data Field: Generic Top Level Collection ID
+M570	Data Field: Generic Report ID
+M571	Data Field: Generic Report Item Position Index
+M572	Data Field: Generic Firmware VARTYPE
+M573	Data Field: Generic Unit of Measure
+M574	Data Field: Generic Unit Exponent
+M575	Data Field: Generic Report Size
+M576	Data Field: Generic Report Count
+M577-M57F	Data Field: Generic Reserved%X %x
+M580	Property: Generic
+M581	Property: Enumerator Table Row Index
+M582	Property: Enumerator Table Row Count
+M583-M58F	Property: Generic Reserved %X %x
+M590-M7FF	Reserved for future use as Data Fields and Properties
+M800	Sensor State: Undefined
+M801	Sensor State: Ready
+M802	Sensor State: Not Available
+M803	Sensor State: No Data
+M804	Sensor State: Initializing
+M805	Sensor State: Access Denied
+M806	Sensor State: Error
+M810	Sensor Event: Unknown
+M811	Sensor Event: State Changed
+M812	Sensor Event: Property Changed
+M813	Sensor Event: Data Updated
+M814	Sensor Event: Poll Response
+M815	Sensor Event: Change Sensitivity
+M816	Sensor Event: Range Maximum Reached
+M817	Sensor Event: Range Minimum Reached
+M818	Sensor Event: High Threshold Cross Upward
+M819	Sensor Event: High Threshold Cross Downward
+M81A	Sensor Event: Low Threshold Cross Upward
+M81B	Sensor Event: Low Threshold Cross Downward
+M81C	Sensor Event: Zero Threshold Cross Upward
+M81D	Sensor Event: Zero Threshold Cross Downward
+M81E	Sensor Event: Period Exceeded
+M81F	Sensor Event: Frequency Exceeded
+M820	Sensor Event: Complex Trigger
+M830	Connection Type: PC Integrated
+M831	Connection Type: PC Attached
+M832	Connection Type: PC External
+M840	Reporting State: Report No Events
+M841	Reporting State: Report All Events
+M842	Reporting State: Report Threshold Events
+M843	Reporting State: Wake On No Events
+M844	Reporting State: Wake On All Events
+M845	Reporting State: Wake On Threshold Events
+M850	Power State: Undefined
+M851	Power State: D0 Full Power
+M852	Power State: D1 Low Power
+M853	Power State: D2 Standby Power with Wakeup
+M854	Power State: D3 Sleep with Wakeup
+M855	Power State: D4 Power Off
+M860	Accuracy: Default
+M861	Accuracy: High
+M862	Accuracy: Medium
+M863	Accuracy: Low
+M870	Fix Quality: No Fix
+M871	Fix Quality: GPS
+M872	Fix Quality: DGPS
+M880	Fix Type: No Fix
+M881	Fix Type: GPS SPS Mode, Fix Valid
+M882	Fix Type: DGPS SPS Mode, Fix Valid
+M883	Fix Type: GPS PPS Mode, Fix Valid
+M884	Fix Type: Real Time Kinematic
+M885	Fix Type: Float RTK
+M886	Fix Type: Estimated (dead reckoned)
+M887	Fix Type: Manual Input Mode
+M888	Fix Type: Simulator Mode
+M890	GPS Operation Mode: Manual
+M891	GPS Operation Mode: Automatic
+M8A0	GPS Selection Mode: Autonomous
+M8A1	GPS Selection Mode: DGPS
+M8A2	GPS Selection Mode: Estimated (dead reckoned)
+M8A3	GPS Selection Mode: Manual Input
+M8A4	GPS Selection Mode: Simulator
+M8A5	GPS Selection Mode: Data Not Valid
+M8B0	GPS Status: Data Valid
+M8B1	GPS Status: Data Not Valid
+M8C0	Day of Week: Sunday
+M8C1	Day of Week: Monday
+M8C2	Day of Week: Tuesday
+M8C3	Day of Week: Wednesday
+M8C4	Day of Week: Thursday
+M8C5	Day of Week: Friday
+M8C6	Day of Week: Saturday
+M8D0	Kind: Category
+M8D1	Kind: Type
+M8D2	Kind: Event
+M8D3	Kind: Property
+M8D4	Kind: Data Field
+M900	VT_NULL: Empty
+M901	VT_BOOL: Boolean
+M902	VT_UI1: Byte
+M903	VT_I1: Character
+M904	VT_UI2: Unsigned Short
+M905	VT_I2: Short
+M906	VT_UI4: Unsigned Long
+M907	VT_I4: Long
+M908	VT_UI8: Unsigned Long Long
+M909	VT_I8: Long Long
+M90A	VT_R4: Float
+M90B	VT_R8: Double
+M90C	VT_WSTR: Wide String
+M90D	VT_STR: Narrow String
+M90E	VT_CLSID: Guid
+M90F	VT_VECTOR|VT_UI1: Opaque Structure
+M910	VT_F16E0: HID 16-bit Float with Unit Exponent 0
+M911	VT_F16E1: HID 16-bit Float with Unit Exponent 1
+M912	VT_F16E2: HID 16-bit Float with Unit Exponent 2
+M913	VT_F16E3: HID 16-bit Float with Unit Exponent 3
+M914	VT_F16E4: HID 16-bit Float with Unit Exponent 4
+M915	VT_F16E5: HID 16-bit Float with Unit Exponent 5
+M916	VT_F16E6: HID 16-bit Float with Unit Exponent 6
+M917	VT_F16E7: HID 16-bit Float with Unit Exponent 7
+M918	VT_F16E8: HID 16-bit Float with Unit Exponent 8
+M919	VT_F16E9: HID 16-bit Float with Unit Exponent 9
+M91A	VT_F16EA: HID 16-bit Float with Unit Exponent A
+M91B	VT_F16EB: HID 16-bit Float with Unit Exponent B
+M91C	VT_F16EC: HID 16-bit Float with Unit Exponent C
+M91D	VT_F16ED: HID 16-bit Float with Unit Exponent D
+M91E	VT_F16EE: HID 16-bit Float with Unit Exponent E
+M91F	VT_F16EF: HID 16-bit Float with Unit Exponent F
+M920	VT_F32E0: HID 32-bit Float with Unit Exponent 0
+M921	VT_F32E1: HID 32-bit Float with Unit Exponent 1
+M922	VT_F32E2: HID 32-bit Float with Unit Exponent 2
+M923	VT_F32E3: HID 32-bit Float with Unit Exponent 3
+M924	VT_F32E4: HID 32-bit Float with Unit Exponent 4
+M925	VT_F32E5: HID 32-bit Float with Unit Exponent 5
+M926	VT_F32E6: HID 32-bit Float with Unit Exponent 6
+M927	VT_F32E7: HID 32-bit Float with Unit Exponent 7
+M928	VT_F32E8: HID 32-bit Float with Unit Exponent 8
+M929	VT_F32E9: HID 32-bit Float with Unit Exponent 9
+M92A	VT_F32EA: HID 32-bit Float with Unit Exponent A
+M92B	VT_F32EB: HID 32-bit Float with Unit Exponent B
+M92C	VT_F32EC: HID 32-bit Float with Unit Exponent C
+M92D	VT_F32ED: HID 32-bit Float with Unit Exponent D
+M92E	VT_F32EE: HID 32-bit Float with Unit Exponent E
+M92F	VT_F32EF: HID 32-bit Float with Unit Exponent F
+M940	Unit: Not Specified
+M941	Unit: Lux
+M942	Unit: Degrees Kelvin
+M943	Unit: Degrees Celsius
+M944	Unit: Pascal
+M945	Unit: Newton
+M946	Unit: Meters/Second
+M947	Unit: Kilogram
+M948	Unit: Meter
+M949	Unit: Meters/Second/Second
+M94A	Unit: Farad
+M94B	Unit: Ampere
+M94C	Unit: Watt
+M94D	Unit: Henry
+M94E	Unit: Ohm
+M94F	Unit: Volt
+M950	Unit: Hertz
+M951	Unit: Bar
+M952	Unit: Degrees Anti-clockwise
+M953	Unit: Degrees Clockwise
+M954	Unit: Degrees
+M955	Unit: Degrees/Second
+M956	Unit: Degrees/Second/Second
+M957	Unit: Knot
+M958	Unit: Percent
+M959	Unit: Second
+M95A	Unit: Millisecond
+M95B	Unit: G
+M95C	Unit: Bytes
+M95D	Unit: Milligauss
+M95E	Unit: Bits
+M970	Exponent 0: 1
+M971	Exponent 1: 10
+M972	Exponent 2: 100
+M973	Exponent 3: 1 000
+M974	Exponent 4: 10 000
+M975	Exponent 5: 100 000
+M976	Exponent 6: 1 000 000
+M977	Exponent 7: 10 000 000
+M978	Exponent 8: 0.00 000 001
+M979	Exponent 9: 0.0 000 001
+M97A	Exponent A: 0.000 001
+M97B	Exponent B: 0.00 001
+M97C	Exponent C: 0.0 001
+M97D	Exponent D: 0.001
+M97E	Exponent E: 0.01
+M97F	Exponent F: 0.1
+M800-MFFF	Reserved for use as Selection Values %X %x

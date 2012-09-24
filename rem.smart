@@ -1,0 +1,55 @@
+UP    0x0C         //  Consumer Devices
+U     0x01         //  0x01 [Consumer Control]
+A {                //  Application (mouse, keyboard)
+   U     0x02      //  0x02 [Numeric Key Pad]
+   L {             //  Logical (interrelated data)
+      UP    0x09   //  Button
+      Umin  0x01   //  0x01 [Button 1 (primary/trigger)]
+      Umax  0x0A   //  0x0A [Button 0A]
+      Lmin     1   //  0x01 [1]
+      Lmax    10   //  0x0A [10]
+      RS    0x04   //  0x04 [4]
+      RC    0x01   //  0x01 [1]
+      I     0x00   //  0x00 Data[0] Arr[1] Abs[2] 
+
+      }            //   [Numeric Key Pad]
+
+   UP    0x0C      //  Consumer Devices
+   U     0x86      //  0x86 [Channel]
+   U     0xE0      //  0xE0 [Volume]
+   Lmin    -1      //  0xFF [-1]
+   Lmax     1      //  0x01 [1]
+   RS    0x02      //  0x02 [2]
+   RC    0x02      //  0x02 [2]
+   I     0x46      //  0x46 Data[0] Var[1] Rel[2] Null[6] 
+
+   U     0xE2      //  0xE2 [Mute]
+   U     0x30      //  0x30 [Power]
+   U     0x34      //  0x34 [Sleep Mode]
+   U     0x60      //  0x60 [Data On Screen]
+   U     0x64      //  0x64 [Broadcast Mode]
+   U     0x83      //  0x83 [Recall Last]
+   U     0x81      //  0x81 [Assign Selection]
+   Lmin     1      //  0x01 [1]
+   Lmax     7      //  0x07 [7]
+   RS    0x04      //  0x04 [4]
+   RC    0x01      //  0x01 [1]
+   I     0x00      //  0x00 Data[0] Arr[1] Abs[2] 
+
+   U     0x80      //  0x80 [Selection]
+   L {             //  Logical (interrelated data)
+      UP    0x09   //  Button
+      Umin  0x01   //  0x01 [Button 1 (primary/trigger)]
+      Umax  0x03   //  0x03 [Button 3 (tertiary)]
+      Lmin     1   //  0x01 [1]
+      Lmax     3   //  0x03 [3]
+      RS    0x02   //  0x02 [2]
+      I     0x00   //  0x00 Data[0] Arr[1] Abs[2] 
+
+      }            //   [Selection]
+
+   Lmin     2      //  0x02 [2]
+   I     0x03      //  0x03 Const[0] Var[1] Abs[2] 
+
+   }               //   [Consumer Control]
+

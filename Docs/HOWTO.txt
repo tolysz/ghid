@@ -1,0 +1,41 @@
+
+The outline:
+1) We start with a desciptor reported by the device itself
+2) We modify it
+3) We make our kernel use this modified HID description.
+
+Filling the details:
+Let's take the sixaxis as the example device we want to fix...
+1)
+  We need to get this decriptor it should be somwhere in:
+   /debug/hid/0003:054C:0268.XXXX/rdesc
+   as this descriptor is usually(always?) constant, lets copy it into some local file
+   like sixaxis_debug.txt
+2) Modifing it is not a trivial task even hardware vendors seams to have problems getting this one right.
+  There are tools out there dealing with this, however the only one I've found is Descriptor Tool from Intel (dt.exe)
+  It drawbacks are: it requires wine, it can not read from our debug format, and it is a GUI application.
+  gHID is the solution to these issues.
+  a) we convert it into our internal smart format
+   cat sixaxis_debug.txt | ./gHID dat > sixaxis.smart
+  b) we can fix comments in places we edited or added something
+   cat sixaxis.smart | ./gHID > sixaxis_new.smart
+  c) say I endup with ps3.smart file and want to have it 
+   in the same format as in debug description:
+    cat ps3.smart |./gHID smart dat > ps3.dat
+   or as a binary file:
+    cat ps3.smart |./gHID smart dat | ./hex2bin.sh > ps3.bin
+   or as a .h file:
+    cat ps3.smart |./gHID smart h  > ps3.h
+
+3) you need to patch your kernel with my patch... which main's drawback is being silly commented...
+  and then place the descriptor in:
+  /lib/firmware/hid/0003:054C:0268:0111.bin
+  or rather:
+  sudo mkdir -p /lib/firmware/hid
+  sudo cp ps3.bin /lib/firmware/hid/0003:054C:0268:0111.bin
+
+  The location is different for each device and is reported in kernel logs
+  each time you plug in a hid compatibile device.
+
+  We can verify that our work was succeful by looking again at
+   /debug/hid/0003:054C:0268.XXXX/rdesc

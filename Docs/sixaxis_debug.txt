@@ -1,0 +1,502 @@
+05 01 09 04 a1 01 a1 02 85 01 75 08 95 01 15 00 26 ff 00 81 03 75 01 95 13 15 00 25 01 35 00 45 01 05 09 19 01 29 13 81 02 75 01 95 0d 06 00 ff 81 03 15 00 26 ff 00 05 01 09 01 a1 00 75 08 95 04 35 00 46 ff 00 09 30 09 31 09 32 09 35 81 02 c0 05 01 75 08 95 27 09 01 81 02 75 08 95 30 09 01 91 02 75 08 95 30 09 01 b1 02 c0 a1 02 85 02 75 08 95 30 09 01 b1 02 c0 a1 02 85 ee 75 08 95 30 09 01 b1 02 c0 a1 02 85 ef 75 08 95 30 09 01 b1 02 c0 c0 
+
+  INPUT(1)[INPUT]
+    Field(0)
+      Usage(19)
+        Button.0001
+        Button.0002
+        Button.0003
+        Button.0004
+        Button.0005
+        Button.0006
+        Button.0007
+        Button.0008
+        Button.0009
+        Button.000a
+        Button.000b
+        Button.000c
+        Button.000d
+        Button.000e
+        Button.000f
+        Button.0010
+        Button.0011
+        Button.0012
+        Button.0013
+      Logical Minimum(0)
+      Logical Maximum(1)
+      Physical Minimum(0)
+      Physical Maximum(1)
+      Report Size(1)
+      Report Count(19)
+      Report Offset(8)
+      Flags( Variable Absolute )
+    Field(1)
+      Physical(GenericDesktop.Pointer)
+      Usage(4)
+        GenericDesktop.X
+        GenericDesktop.Y
+        GenericDesktop.Z
+        GenericDesktop.Rz
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(0)
+      Physical Maximum(255)
+      Report Size(8)
+      Report Count(4)
+      Report Offset(40)
+      Flags( Variable Absolute )
+    Field(2)
+      Usage(39)
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(0)
+      Physical Maximum(255)
+      Report Size(8)
+      Report Count(39)
+      Report Offset(72)
+      Flags( Variable Absolute )
+  OUTPUT(1)[OUTPUT]
+    Field(0)
+      Usage(48)
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(0)
+      Physical Maximum(255)
+      Report Size(8)
+      Report Count(48)
+      Report Offset(0)
+      Flags( Variable Absolute )
+  FEATURE(1)[FEATURE]
+    Field(0)
+      Usage(48)
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(0)
+      Physical Maximum(255)
+      Report Size(8)
+      Report Count(48)
+      Report Offset(0)
+      Flags( Variable Absolute )
+  FEATURE(2)[FEATURE]
+    Field(0)
+      Usage(48)
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(0)
+      Physical Maximum(255)
+      Report Size(8)
+      Report Count(48)
+      Report Offset(0)
+      Flags( Variable Absolute )
+  FEATURE(238)[FEATURE]
+    Field(0)
+      Usage(48)
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(0)
+      Physical Maximum(255)
+      Report Size(8)
+      Report Count(48)
+      Report Offset(0)
+      Flags( Variable Absolute )
+  FEATURE(239)[FEATURE]
+    Field(0)
+      Usage(48)
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+        GenericDesktop.Pointer
+      Logical Minimum(0)
+      Logical Maximum(255)
+      Physical Minimum(0)
+      Physical Maximum(255)
+      Report Size(8)
+      Report Count(48)
+      Report Offset(0)
+      Flags( Variable Absolute )
+
+Button.0001 ---> Key.Trigger
+Button.0002 ---> Key.ThumbBtn
+Button.0003 ---> Key.ThumbBtn2
+Button.0004 ---> Key.TopBtn
+Button.0005 ---> Key.TopBtn2
+Button.0006 ---> Key.PinkieBtn
+Button.0007 ---> Key.BaseBtn
+Button.0008 ---> Key.BaseBtn2
+Button.0009 ---> Key.BaseBtn3
+Button.000a ---> Key.BaseBtn4
+Button.000b ---> Key.BaseBtn5
+Button.000c ---> Key.BaseBtn6
+Button.000d ---> Key.?
+Button.000e ---> Key.?
+Button.000f ---> Key.?
+Button.0010 ---> Key.BtnDead
+Button.0011 ---> Key.?
+Button.0012 ---> Key.?
+Button.0013 ---> Key.?
+GenericDesktop.X ---> Absolute.X
+GenericDesktop.Y ---> Absolute.Y
+GenericDesktop.Z ---> Absolute.Z
+GenericDesktop.Rz ---> Absolute.Rz
+GenericDesktop.Pointer ---> Absolute.Misc
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.MTMajor
+GenericDesktop.Pointer ---> Absolute.MTMinor
+GenericDesktop.Pointer ---> Absolute.MTMajorW
+GenericDesktop.Pointer ---> Absolute.MTMinorW
+GenericDesktop.Pointer ---> Absolute.MTOrientation
+GenericDesktop.Pointer ---> Absolute.MTPositionX
+GenericDesktop.Pointer ---> Absolute.MTPositionY
+GenericDesktop.Pointer ---> Absolute.MTToolType
+GenericDesktop.Pointer ---> Absolute.MTBlobID
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.?
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Absolute.Serial
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report
+GenericDesktop.Pointer ---> Sync.Report

@@ -1,0 +1,118 @@
+0F	PID Page
+
+00	Undefined%X %x
+01	Physical Interface Device
+02-1F	Reserved%X %x
+20	Normal
+21	Set Effect Report
+22	Effect Block Index
+23	Parameter Block Offset
+24	ROM Flag
+25	Effect Type
+26	ET Constant Force
+27	ET Ramp
+28	ET Custom Force Data
+29-2F	Reserved%X %x
+30	ET Square
+31	ET Sine
+32	ET Triangle
+33	ET Sawtooth Up
+34	ET Sawtooth Down
+35-3F	Reserved%X %x
+40	ET Spring
+41	ET Damper
+42	ET Inertia
+43	ET Friction
+44-4F	Reserved%X %x
+50	Duration
+51	Sample Period
+52	Gain
+53	Trigger Button
+54	Trigger Repeat Interval
+55	Axes Enable
+56	Direction Enable
+57	Direction
+58	Type Specific Block Offset
+59	Block Type
+5A	Set Envelope Report
+5B	Attack Level
+5C	Attack Time
+5D	Fade Level
+5E	Fade Time
+5F	Set Condition Report
+60	CP Offset
+61	Positive Coefficient
+62	Negative Coefficient
+63	Positive Saturation
+64	Negative Saturation
+65	Dead Band
+66	Download Force Sample
+67	Isoch Custom Force Enable
+68	Custom Force Data Report
+69	Custom Force Data
+6A	Custom Force Vendor Defined Data
+6B	Set Custom Force Report
+6C	Custom Force Data Offset
+6D	Sample Count
+6E	Set Periodic Report
+6F	Offset
+70	Magnitude
+71	Phase
+72	Period
+73	Set Constant Force Report
+74	Set Ramp Force Report
+75	Ramp Start
+76	Ramp End
+77	Effect Operation Report
+78	Effect Operation
+79	Op Effect Start
+7A	Op Effect Start Solo
+7B	Op Effect Stop
+7C	Loop Count
+7D	Device Gain Report
+7E	Device Gain
+7F	PID Pool Report
+80	RAM Pool Size
+81	ROM Pool Size
+82	ROM Effect Block Count
+83	Simultaneous Effects Max
+84	Pool Alignment
+85	PID Pool Move Report
+86	Move Source
+87	Move Destination
+88	Move Length
+89	PID Block Load Report
+8A	Reserved%X %x
+8B	Block Load Status
+8C	Block Load Success
+8D	Block Load Full
+8E	Block Load Error
+8F	Block Handle
+90	PID Block Free Report
+91	Type Specific Block Handle
+92	PID State Report
+93	Reserved%X %x
+94	Effect Playing
+95	PID Device Control Report
+96	PID Device Control
+97	DC Enable Actuators
+98	DC Disable Actuators
+99	DC Stop All Effects
+9A	DC Device Reset
+9B	DC Device Pause
+9C	DC Device Continue
+9D	Reserved%X %x
+9E	Reserved%X %x
+9F	Device Paused
+A0	Actuators Enabled
+A1-A3	Reserved%X %x
+A4	Safety Switch
+A5	Actuator Override Switch
+A6	Actuator Power
+A7	Start Delay
+A8	Parameter Block Size
+A9	Device Managed Pool
+AA	Shared Parameter Blocks
+AB	Create New Effect Report
+AC	RAM Pool Available
+AE-FFFF	Reserved%X %x

@@ -1,0 +1,5 @@
+FF00-FFFF	Vendor Defined Page %X
+
+00	Undefined%X %x
+01-02	Vendor Usage%X %x
+03-FFFF	Reserved%X %x
