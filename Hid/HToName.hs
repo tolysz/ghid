@@ -103,7 +103,8 @@ wrr :: RBitString -> String -> [String]
 wrr a s = [(bval' a ) ++ " [" ++ s ++"]"]
 
 wrrnl :: RBitString -> String -> [String]
-wrrnl a s = [(bval' a ) ++ " [" ++ s ++"]\n"] 
+--wrrnl a s = [(bval' a ) ++ " [" ++ s ++"]\n"] --
+wrrnl a s = [(bval' a ) ++ " [" ++ s ++"]"] --
 
 wnl :: RBitString -> [String] -> [String]
 wnl a s= [(bval' a )]++s 
@@ -138,7 +139,8 @@ biz a s = [biz' a (toStr s) 0]
     biz' d (b:bs) i 
         | b=='1' || i < 3 = (getIJ d i (sbit b)) ++"["++show i++"] "++ (biz' d bs (i+1))
         | otherwise = biz' d bs (i+1)
-    biz' _ [] _ = "\n"
+--    biz' _ [] _ = "\n"
+    biz' _ [] _ = ""
 
 getIJ :: [[String]] -> Int -> Int -> String
 getIJ a i j = (a !! i1) !! j1

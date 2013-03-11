@@ -1,6 +1,7 @@
 
 module Hid.Export
   ( toCArray
+  , toCArrayC
   , toCArrayDirty
   , toShort
   , datToBin
@@ -38,11 +39,23 @@ pshow [] _ = "\n"
 pshow [a] i= sone1 a i
 pshow (a:as) i= (sone a i) ++"\n"++pshow as i
 
+pshowC :: [(String, (MType, [String]), HState)] -> Int -> [Char]
+pshowC [] _ = "" -- 
+pshowC [a] i= "\t" ++ sone1C a i
+pshowC (a:as) i = "\t" ++  (soneC a i) ++"\n" ++ pshowC as i
+
+
 sone :: (String, (MType, [String]), HState) -> Int -> String
 sone (te,(a,des),s) i = (sx l) ++c++(pad (i-l) c)++"//  "++ (show a) ++" "++ (putDes des i)
        where
           c =  coma(te++" ")
           l = length $ sStack s
+
+soneC :: (String, (MType, [String]), HState) -> Int -> String
+soneC (te,(a,des),s) i = (sx l) ++c++(pad (i-l) c)++"/*  "++ (show a) ++ " " ++(putDesC des i)
+       where
+          c =  coma(te++" ")
+          l = (length $ sStack s) 
 
 putDes :: [String] -> Int -> String
 putDes []  _ = ""
@@ -51,11 +64,27 @@ putDes (a:as) i = a ++ (desNext as i)
   desNext [] _ = ""
   desNext (b:bs) ii = "\n"++(sx ii) ++ "//  " ++ b ++ desNext bs ii
 
+putDesC :: [String] -> Int -> String
+putDesC []  _ = " */"   -- only if description is empty to start with
+putDesC (a:as) i = a ++ " " ++ (desNext as i) ++ " */"
+ where
+  desNext [] _ = ""
+--  desNext [b] ii = " " ++ b ++ " )"
+  desNext (b:bs) ii = "("++ b  ++ desNext bs ii ++ ")"
+
+
 sone1 :: (String, (MType, [String]), HState) -> Int -> String
 sone1 (te,(a,des),s) i = (sx l) ++c++(pad (i-l) c)++"//  "++ (show a) ++" "++ (putDes des i)
        where
           c = (init $ coma(te++" "))
           l = length $ sStack s
+
+sone1C :: (String, (MType, [String]), HState) -> Int -> String
+sone1C (te,(a,des),s) i = (sx l) ++c++(pad (i-l) c)++"/*  "++ (show a) ++" "++ (putDesC des i)
+       where
+          c = (init $ coma(te++" "))
+          l = (length $ sStack s)
+
 
 coma :: String -> String
 coma (a:b:' ':as) = " 0x"++[a,b]++"," ++ coma as
@@ -75,6 +104,13 @@ toCArray a y = wrap a $ pshow parsed i
          where
            parsed = map (\x-> ((toStr . rbin2texthex . hsinter1 . fst) x, srepa x, snd x))$ walk emptyState y
            i = 2 + maximum (map (\(te,_,s)-> (length $ sStack s) + (length $ coma (te++" "))) parsed)
+
+toCArrayC :: String -> [SItem] -> String
+toCArrayC a y = wrap a $ pshowC parsed i
+         where
+           parsed = map (\x-> ((toStr . rbin2texthex . hsinter1 . fst) x, srepa x, snd x))$ walk emptyState y
+           i = 2 + maximum (map (\(te,_,s)-> (length $ sStack s) + (length $ coma (te++" "))) parsed)
+
 
 smartShow ::  Int -> (String, (MType, RBitString, HState, [String])) -> String
 smartShow i (_,(a,b,s,des))   = (sx l) ++c++((pad (i-l)) c)++" // "++ (concatMap (\x->" "++x) des) ++"\n"

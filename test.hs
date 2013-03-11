@@ -32,7 +32,8 @@ main = do
              "hid" -> fromDat . fromHid . filter (' '/=) . bin2hex
              _ -> fromShortHand
         let postprocessor = case ((head . tail) (args++[""]++[""])) of
-             "h" -> toCArray ((head . tail . tail) (args ++ ["rdesc"])) -- nicely tabed C array
+             "h" -> toCArray ((head . tail . tail) (args ++ ["rdesc"])) -- nicely tabed C array with // comments
+             "hc" -> toCArrayC ((head . tail . tail) (args ++ ["rdesc"])) -- nicely tabed C array with /* */ comments
              "hd" -> toCArrayDirty
              "dat" ->  toDat              -- Text hex spaced format as in kernel 
              "bin" ->  datToBin . toDat
