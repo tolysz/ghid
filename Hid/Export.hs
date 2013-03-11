@@ -46,13 +46,13 @@ pshowC (a:as) i = "\t" ++  (soneC a i) ++"\n" ++ pshowC as i
 
 
 sone :: (String, (MType, [String]), HState) -> Int -> String
-sone (te,(a,des),s) i = (sx l) ++c++(pad (i-l) c)++"//  "++ (show a) ++" "++ (putDes des i)
+sone (te,(a,des),s) i = (sx l) ++ c ++(pad (i-l) c)++"//  "++ (show a) ++" "++ (putDes des i)
        where
           c =  coma(te++" ")
           l = length $ sStack s
 
 soneC :: (String, (MType, [String]), HState) -> Int -> String
-soneC (te,(a,des),s) i = (sx l) ++c++(pad (i-l) c)++"/*  "++ (show a) ++ " " ++(putDesC des i)
+soneC (te,(a,des),s) i = (sx l ) ++ c ++(pad (i-l) c)++"/*  "++ (show a) ++ " " ++(putDesC des i)
        where
           c =  coma(te++" ")
           l = (length $ sStack s) 
@@ -87,7 +87,8 @@ sone1C (te,(a,des),s) i = (sx l) ++c++(pad (i-l) c)++"/*  "++ (show a) ++" "++ (
 
 
 coma :: String -> String
-coma (a:b:' ':as) = " 0x"++[a,b]++"," ++ coma as
+coma (a:b:' ':[]) = "0x" ++ [a,b]
+coma (a:b:' ':as) = "0x"++[a,b]++", " ++ coma as
 coma [] = []
 
 wrap :: String -> String -> String
