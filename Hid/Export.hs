@@ -87,12 +87,12 @@ sone1C (te,(a,des),s) i = (sx l) ++c++(pad (i-l) c)++"/*  "++ (show a) ++" "++ (
 
 
 coma :: String -> String
-coma (a:b:' ':[]) = "0x" ++ [a,b]
+coma (a:b:' ':[]) = "0x" ++ [a,b] ++ ","
 coma (a:b:' ':as) = "0x"++[a,b]++", " ++ coma as
 coma [] = []
 
 wrap :: String -> String -> String
-wrap n a = n ++ " = {\n" ++ a ++"\n}\n"
+wrap n a = n ++ " = {\n" ++ a ++"\n};\n"
 
 toCArrayDirty :: [SItem] -> String
 toCArrayDirty y = wrap "rdesc" $ pshow parsed 20
