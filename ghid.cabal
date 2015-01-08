@@ -1,0 +1,25 @@
+name:                ghid
+version:             0.1.0.0
+synopsis:            Complier and converter for HID description firmware
+description:         Simple compiler for creating and editing HID description files. 
+                     It can convert from simple C .h files, or hexadecimal space separated strings.
+                     Its main advantage is its own language "smart" which makes everything pretty easy.
+homepage:            https://code.google.com/p/ghid/
+license:             BSD3
+license-file:        LICENSE
+author:              Marcin Tolysz
+maintainer:          tolysz@gmail.com
+-- copyright:           
+category:            Language
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+executable ghid
+  main-is:             Main.hs
+  -- other-modules:       
+  other-extensions:    GeneralizedNewtypeDeriving, MultiParamTypeClasses, OverloadedStrings, UndecidableInstances, TypeSynonymInstances, FlexibleInstances
+  build-depends:       base >=4.7 && <4.8
+               ,       bytestring
+  -- hs-source-dirs:      
+  default-language:    Haskell2010

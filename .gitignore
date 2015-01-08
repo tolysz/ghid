@@ -1,3 +1,11 @@
-*.hi
+dist
+cabal-dev
 *.o
-gHID
+*.hi
+*.chi
+*.chs.h
+.virtualenv
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+cabal.config
