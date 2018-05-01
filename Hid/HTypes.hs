@@ -598,8 +598,8 @@ smartWords a = process $ words $ fixBrackets a
 fixBrackets :: String -> String
 fixBrackets "" = ""
 fixBrackets (a:as) 
-         | a `elem` "{}[]-" = ' ':a:fixBrackets as
-         | a `elem` ",;.:" = ' ':a:' ':fixBrackets as
+         | a `elem` ("{}[]-" :: String) = ' ':a:fixBrackets as
+         | a `elem` (",;.:" :: String) = ' ':a:' ':fixBrackets as
          | otherwise = a:fixBrackets as
 
 isSmartWord :: String -> Bool
